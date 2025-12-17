@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Perfil Profesional – Geronimo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f4f6f9;
+      color: #1f2933;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #0f172a;
+      border-left: 4px solid #2563eb;
+      padding-left: 12px;
+    }
+    .card {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a, button {
+      background: #2563eb;
+      color: #ffffff;
+      padding: 10px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    a.secondary {
+      background: #e5e7eb;
+      color: #1f2933;
+    }
+    iframe {
+      width: 100%;
+      height: 420px;
+      border-radius: 10px;
+      border: none;
+    }
+    #content {
+      display: none;
+    }
+    .login {
+      text-align: center;
+      margin-top: 120px;
+    }
+    input {
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      margin-right: 10px;
+      width: 200px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #64748b;
+      padding: 30px 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login" id="login">
+  <h1>Acceso profesional</h1>
+  <p>Este contenido está destinado a procesos de selección</p>
+  <input type="password" id="password" placeholder="Contraseña" />
+  <button onclick="checkPassword()">Ingresar</button>
+</div>
+
+<div id="content">
+
+<header>
+  <h1>Geronimo</h1>
+  <p>Ingeniería Industrial · Análisis · Gestión · Mejora Continua</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Perfil profesional</h2>
+    <p>
+      Estudiante avanzado de Ingeniería Industrial, próximo a finalizar la carrera, con experiencia en
+      entornos técnicos y operativos. Formación orientada al análisis de procesos, gestión de operaciones
+      y mejora continua, con foco en la seguridad, la eficiencia y la toma de decisiones basada en datos.
+    </p>
+    <ul>
+      <li>Análisis y optimización de procesos</li>
+      <li>Gestión operativa y coordinación de tareas</li>
+      <li>Seguridad e higiene industrial</li>
+      <li>Documentación técnica y control de información</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Currículum Vitae</h2>
+    <p>El CV se encuentra disponible para su visualización online o descarga directa.</p>
+    <p>
+      <a href="CV_Geronimo.pdf" target="_blank">Ver CV</a>
+      <a href="CV_Geronimo.pdf" download class="secondary">Descargar CV</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Entrevista profesional – Español</h2>
+    <iframe src="https://www.youtube.com/embed/ID_VIDEO_ESP"></iframe>
+  </div>
+
+  <div class="card">
+    <h2>Professional Interview – English</h2>
+    <iframe src="https://www.youtube.com/embed/ID_VIDEO_ENG"></iframe>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 – Perfil profesional desarrollado para procesos de selección
+</footer>
+
+</div>
+
+<script>
+  function checkPassword() {
+    const pass = document.getElementById('password').value;
+    if (pass === '12') {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    } else {
+      alert('Contraseña incorrecta');
+    }
+  }
+</script>
+
+</body>
+</html>
