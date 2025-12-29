@@ -118,6 +118,23 @@
   display: inline-block;
   margin: 5px 5px 0 0;
 }
+.qr-box {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.qr-box img {
+  width: 160px;
+  max-width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.qr-text {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
 
   </style>
 </head>
@@ -126,6 +143,11 @@
 <div class="login" id="login">
   <h1>Acceso profesional</h1>
   <p>Este contenido está destinado a procesos de selección</p>
+    <div class="qr-box">
+    <p class="qr-text">Acceso rápido desde el celular</p>
+    <img src="QR.png" alt="Código QR de acceso" />
+  </div>
+
   <input type="password" id="password" placeholder="Contraseña" />
   <button onclick="checkPassword()">Ingresar</button>
 </div>
