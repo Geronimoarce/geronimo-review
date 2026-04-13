@@ -18,7 +18,6 @@
       padding: 40px 20px;
       text-align: center;
     }
-    
     header h1 {
       margin: 0;
       font-size: 32px;
@@ -74,20 +73,6 @@
       border-radius: 10px;
       border: none;
     }
-    #content {
-      display: none;
-    }
-    .login {
-      text-align: center;
-      margin-top: 120px;
-    }
-    input {
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid #cbd5e1;
-      margin-right: 10px;
-      width: 200px;
-    }
     footer {
       text-align: center;
       font-size: 14px;
@@ -95,64 +80,29 @@
       padding: 30px 10px;
     }
     .cv-actions {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.cv-group {
-  background: #f8fafc;
-  padding: 15px;
-  border-radius: 8px;
-  flex: 1 1 280px;
-}
-
-.cv-group strong {
-  display: block;
-  margin-bottom: 10px;
-  color: #0f172a;
-}
-
-.cv-group a {
-  display: inline-block;
-  margin: 5px 5px 0 0;
-}
-.qr-box {
-  margin: 25px auto;
-  text-align: center;
-}
-
-.qr-box img {
-  width: 160px;
-  max-width: 60%;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.qr-text {
-  font-size: 14px;
-  color: #64748b;
-  margin-bottom: 10px;
-}
-
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    .cv-group {
+      background: #f8fafc;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 280px;
+    }
+    .cv-group strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+    .cv-group a {
+      display: inline-block;
+      margin: 5px 5px 0 0;
+    }
   </style>
 </head>
 <body>
-
-<div class="login" id="login">
-  <h1>Acceso profesional</h1>
-  <p>Este contenido está destinado a procesos de selección</p>
-    <div class="qr-box">
-    <p class="qr-text">Acceso rápido desde el celular</p>
-    <img src="QR.png" alt="Código QR de acceso" />
-  </div>
-
-  <input type="password" id="password" placeholder="Contraseña" />
-  <button onclick="checkPassword()">Ingresar</button>
-</div>
-
-<div id="content">
 
 <header>
   <h1>Geronimo</h1>
@@ -164,7 +114,7 @@
   <div class="card">
     <h2>Perfil profesional</h2>
     <p>
-     Ingeniero Industrial con experiencia en entornos técnicos y operativos. Formación orientada al análisis y optimización de procesos, gestión de operaciones y mejora continua, con foco en la seguridad, la eficiencia y la toma de decisiones basada en datos.
+      Ingeniero Industrial con experiencia en entornos técnicos y operativos. Formación orientada al análisis y optimización de procesos, gestión de operaciones y mejora continua, con foco en la seguridad, la eficiencia y la toma de decisiones basada en datos.
     </p>
     <ul>
       <li>Análisis y optimización de procesos</li>
@@ -174,27 +124,26 @@
     </ul>
   </div>
   
-<div class="card">
-  <h2>Currículum Vitae</h2>
-  <p>El CV se encuentra disponible para su visualización online o descarga directa.</p>
+  <div class="card">
+    <h2>Currículum Vitae</h2>
+    <p>El CV se encuentra disponible para su visualización online o descarga directa.</p>
 
-  <div class="cv-actions">
-    <div class="cv-group">
-      <strong>Español</strong>
-      <a href="Geronimo_Arce_CV_ES.pdf" target="_blank">Ver CV</a>
-      <a href="Geronimo_Arce_CV_ES.pdf" download class="secondary">Descargar</a>
-    </div>
+    <div class="cv-actions">
+      <div class="cv-group">
+        <strong>Español</strong>
+        <a href="Geronimo_Arce_CV_ES.pdf" target="_blank">Ver CV</a>
+        <a href="Geronimo_Arce_CV_ES.pdf" download class="secondary">Descargar</a>
+      </div>
 
-    <div class="cv-group">
-      <strong>English</strong>
-      <a href="Geronimo_Arce_CV_EN.pdf" target="_blank">View CV</a>
-      <a href="Geronimo_Arce_CV_EN.pdf" download class="secondary">Download</a>
+      <div class="cv-group">
+        <strong>English</strong>
+        <a href="Geronimo_Arce_CV_EN.pdf" target="_blank">View CV</a>
+        <a href="Geronimo_Arce_CV_EN.pdf" download class="secondary">Download</a>
+      </div>
     </div>
   </div>
-</div>
 
-
-<div class="card">
+  <div class="card">
     <h2>Entrevista profesional – Español</h2>
     <iframe src="https://www.youtube.com/embed/sPdjlLkSYwA"></iframe>
   </div>
@@ -202,7 +151,6 @@
   <div class="card">
     <h2>Professional Interview – English</h2>
     <iframe src="https://www.youtube.com/embed/G3DmC5rZhJs"></iframe>
-  
   </div>
 
 </div>
@@ -211,28 +159,5 @@
   © 2025 – Perfil profesional desarrollado para procesos de selección
 </footer>
 
-</div>
-
-
-
-  
-
-<script>
-  function checkPassword() {
-    const pass = document.getElementById('password').value;
-    if (pass === '3030') {
-      document.getElementById('login').style.display = 'none';
-      document.getElementById('content').style.display = 'block';
-    } else {
-      alert('Contraseña incorrecta');
-    }
-  }
-</script>
-
-  
-
-
-
-  
 </body>
 </html>
